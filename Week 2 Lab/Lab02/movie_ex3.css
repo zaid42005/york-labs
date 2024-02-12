@@ -1,0 +1,44 @@
+body {
+    border: 5px solid brown;
+    padding: 10px;
+    background-color: white;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+html{
+    background-image: url('images/waves.png'); 
+
+}
+
+.movie{
+    overflow: auto;
+    border:5px solid rgb(125,0,0);
+    background-color: rgb(246,212,212);
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+header {
+    padding: 10px;
+    text-align: right;
+    background-color: white;
+}
+
+footer {
+    margin: 10px;
+    text-align: center;
+}
+
+.movie img{
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+        
+}
+
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

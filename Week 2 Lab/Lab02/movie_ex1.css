@@ -1,0 +1,23 @@
+.movie{
+    border: 5px solid blue
+
+}
+
+p {
+    border: 5px solid black
+}
+span{
+    border: 5px solid green
+}
+header{
+    border: 5px solid cyan
+}
+header h2{
+    border:5px solid purple
+}
+body{
+    border: 5px solid magenta
+}
+footer{
+    border: 5px solid red
+}

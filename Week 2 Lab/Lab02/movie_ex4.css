@@ -1,0 +1,61 @@
+
+body{
+    border:5px solid rgb(125,0,0);
+    background-color: white;
+    padding: 10px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+html{
+    background-image: url("images/waves.png");
+}
+
+.movie{
+    overflow: auto;
+    width: 70%;
+    border:5px solid rgb(125,0,0);
+    background-color: rgb(246,212,212);
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+header *{
+    text-align: right;
+}
+
+
+footer *{
+    text-align: center;
+}
+
+.movie img{
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+
+nav{
+    float: right;
+    width: 25%;
+    }
+    
+nav ul li a{
+    text-decoration-line: none;
+    }
+    
+span{
+    color: red;
+    font-style: italic;
+    }
+
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

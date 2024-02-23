@@ -10,7 +10,7 @@
   <!-- in Ex1, add a link tag here to connect it to the css file -->
   <link rel="stylesheet" href="movies_ex1.css" type="text/css" >
   <!-- in Ex2, add a script tag here to connect it to the js file -->
-  <script src="movies_ex2.js"></script>
+  <script src="movies_ex3.js"></script>
 </head>
 <body>
 
@@ -26,16 +26,16 @@
     
   <div class="column1 poster">
     <!-- in Ex3, add an attribute onclick to checkbox inputs -->
-	  <input id="check1" type="checkbox"/> Movie
+	  <input onclick="checkUncheck1()" id="check1" type="checkbox"/> Movie
     <!-- in Ex5, add an attributes onclick and ondblclick to images -->
  	  <img id="poster" src="null" alt="null"/>
   </div>
   <div class="column2 director">
-	  <input id="check2" type="checkbox"/> Director
+	  <input onclick="checkUncheck2()"id="check2" type="checkbox"/> Director
 	  <img id="director" src="null" alt="null" />
   </div>
   <div class="column3 actors">
-	  <input id="check3" type="checkbox"/> Actors
+	  <input onclick="checkUncheck3()" id="check3" type="checkbox"/> Actors
 	  <img id="actors" src="null" alt="null" />
   </div>
 

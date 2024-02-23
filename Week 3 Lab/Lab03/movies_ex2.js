@@ -10,11 +10,13 @@ function p01Func() {
      its attribue src to solaris_poster.jpg. Note that movie images are 
 	  in the subfolder solarie and inside the images folder.
   */
-   document.getElementById("poster").setAttribute("src","images/solaris/solaris_director.jpg"); 
+   document.getElementById("poster").setAttribute("src","images/solaris/solaris_poster.jpg"); 
   
   /* in Ex2, add a getElementById here to get the "poster" img 
      and set the display property of its style to none.
   */
+     document.getElementById("poster").setAttribute("style","display: none;"); 
+     
 
   
   /* in Ex2, repeat the above two steps for the "director" and "actors"
@@ -22,6 +24,11 @@ function p01Func() {
      use solaris_director.jpg. For the image that is shown for "actors",
      use solaris_actors.jpg
   */
+     document.getElementById("director").setAttribute("src","images/solaris/solaris_director.jpg");
+     document.getElementById("director").setAttribute("style","display: none;"); 
+     document.getElementById("actors").setAttribute("src","images/solaris/solaris_actors.jpg");
+     document.getElementById("actors").setAttribute("style","display: none;"); 
+
  
  
   /* the following two lines retrieve the checkboxes with IDs check1

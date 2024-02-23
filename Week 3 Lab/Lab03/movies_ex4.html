@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Webpage HTML document for Lab 03.
+  Author: Amir H Chinaei (and colleagues)
+  EECS 1012; York University; Lassonde School of Engineering. -->
+<html lang="En">
+
+<head>
+  <meta charset="UTF-8">
+  <title> EECS1012: Lab 3 </title>
+  <!-- in Ex1, add a link tag here to connect it to the css file -->
+  <link rel="stylesheet" href="movies_ex1.css" type="text/css" >
+  <!-- in Ex2, add a script tag here to connect it to the js file -->
+  <script src="movies_ex4.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>My Computational Thinking Kit</h1>
+    <nav>
+      <!-- In Ex2, you will add an attribute onclick to this button -->
+      <button onclick="p01Func()">Ex2 + 3</button>
+      <!-- In Ex4, add an attribute onclick to this button -->  
+      <button onclick="p02Func()">Ex 4 + 5</button>
+    </nav>
+  </header>
+    
+  <div class="column1 poster">
+    <!-- in Ex3, add an attribute onclick to checkbox inputs -->
+	  <input onclick="checkUncheck1()" id="check1" type="checkbox"/> Movie
+    <!-- in Ex5, add an attributes onclick and ondblclick to images -->
+ 	  <img id="poster" src="null" alt="null"/>
+  </div>
+  <div class="column2 director">
+	  <input onclick="checkUncheck2()"id="check2" type="checkbox"/> Director
+	  <img id="director" src="null" alt="null" />
+  </div>
+  <div class="column3 actors">
+	  <input onclick="checkUncheck3()" id="check3" type="checkbox"/> Actors
+	  <img id="actors" src="null" alt="null" />
+  </div>
+
+  <div id="description" class="description"></div>
+
+  <footer>(c) Author of this web page: <span><!-- In Ex 1, add your name -->Zaid Ahmed</span> </footer>
+</body>
+</html>

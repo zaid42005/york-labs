@@ -10,7 +10,7 @@ function discount() {
   /* in Ex 2, change the variables to floating point numbers instead. */  
 
   // You will need to alter the code below for Ex 2-5
-  var discountedValue = Math.round(100*(price * (1-discount/100)))/100;
+  var discountedValue = (price * (1-discount/100)).toFixed(2);
  
   /* //in Ex 4, uncomment this block
   switch (a){

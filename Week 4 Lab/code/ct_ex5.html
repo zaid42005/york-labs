@@ -8,11 +8,12 @@
 		<title> EECS1012: Lab 4 - Computational Thinking </title>
 		<link rel="stylesheet" type="text/css" href="ct.css" title="style" /> 
 		<!--in Ex1 to Ex5, you will link your html file to your js file here-->
+		<script src="ct_ex5.js"></script>
 	</head>
 	<body>
 		<header>
 			<!-- in Ex2 to Ex5 you will change this header -->
-			<h1>Add Two Numbers</h1>
+			<h1>Fahrenheit to Celsius Conversion</h1>
 		</header>
 		<div class="column">
 			<!--in Ex 2, change the min for the price to be 0.  
@@ -26,21 +27,21 @@
 				Set the maximum length of the text input to 1 (a single character).
 			-->
 			<div class="input">
-				First #: <input id="a" type="number" min="-1000" max="1000"/>
+				Temperature: <input id="temperature" type="number" min = -300 max = 300/>
 				<p></p>
-				Second #: <input id="b" type="number" min="-1000" max="1000"/>
+				Units (C or F): <input id="unit" type="character" />
 			</div>
 			<div class="input">
 				<!--in Ex1, define an onclick event to this button; the event is to be
 				handled by the function "addition()" in your js file -->
 				<!-- in Ex2 to Ex5, you will need to change the names of the 
 				event handlers appropriately -->
-				<button> Enter </button>
+				<button onclick="convert()"> Enter </button>
 			</div>
 			<strong><p id="output"></p></strong>
 		</div>
 
-		<footer>&copy; Author(s): <span>Amir Chinaei, Andriy Pavlovych, Sonya Allin <!--in Ex1, replace our names with yours!--></span> </footer>
+		<footer>&copy; Author(s): <span>Zaid Ahmed<!--in Ex1, replace our names with yours!--></span> </footer>
 		
 	</body>
 </html>

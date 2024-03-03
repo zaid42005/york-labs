@@ -9,63 +9,51 @@ function month() {
   /* in Ex 2, change the variables to floating point numbers instead. */  
 
   // You will need to alter the code below for Ex 2-5
-  var result = ""
+  var answer = ""
   switch (month) {
     case 1:
-        result = "January";
+        answer = "January";
         break;
     case 2:
-        result = "February";
+        answer = "February";
         break;
     case 3:
-        result = "March";
+        answer = "March";
         break;
     case 4:
-        result = "April";
+        answer = "April";
         break;
     case 5:
-        result = "May";
+        answer = "May";
         break;
     case 6:
-        result = "June";
+        answer = "June";
         break;
     case 7:
-        result = "July";
+        answer = "July";
         break;
     case 8:
-        result = "August";
+        answer = "August";
         break;
     case 9:
-        result = "September";
+        answer = "September";
         break;
     case 10:
-        result = "October";
+        answer = "October";
         break;
     case 11:
-        result = "November";
+        answer = "November";
         break;
     case 12:
-        result = "December";
+        answer = "December";
         break;
     default:
-        result = "Invalid";
+        answer = "Invalid";
   }
-  /* //in Ex 4, uncomment this block
-  switch (a){
-    case (1): 
-      answer = "January";
-      break;
-    case (2): 
-      answer = "February";
-      break;
-      // in Ex4, you need to add cases for other months
-      // as well as a case for an invalid month
-  }
-  */
   
   /* in Ex2 to Ex5, you will want to rename "addedvalue" to make it appropriate
      for those problems. You will also want to adjust the prefix to the output
      in order to match the images in the specification. */ 
-   document.getElementById("output").innerHTML = "Month: "+ result; 
+   document.getElementById("output").innerHTML = "Month: "+ answer; 
 
 }

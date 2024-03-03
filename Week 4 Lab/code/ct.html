@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Webpage HTML document for Lab 4.
+  Authors: Amirhossein Chinaei, Andriy Pavlovych, Sonya Allin
+  For: EECS 1012MN, York University, Lassonde School of Engineering -->
+<html lang="En">
+	<head>
+		<meta charset="UTF-8">
+		<title> EECS1012: Lab 4 - Computational Thinking </title>
+		<link rel="stylesheet" type="text/css" href="ct.css" title="style" /> 
+		<!--in Ex1 to Ex5, you will link your html file to your js file here-->
+	</head>
+	<body>
+		<header>
+			<!-- in Ex2 to Ex5 you will change this header -->
+			<h1>Add Two Numbers</h1>
+		</header>
+		<div class="column">
+			<!--in Ex 2, change the min for the price to be 0.  
+				Change the min and max of the discount to be 0 and 100, respectively  -->
+			<!--in Ex 3, add an additional input and name it something intuitive.
+				Allow the min and max values for the inputs to range from -1000 to 1000. -->
+			<!--in Ex 4, you will need only one numeric input.
+				Allow the min and max values for this inputs to range from 1 to 12. -->
+			<!--in Ex 5, you will need two inputs, one of which will be for type "text"
+				Allow the min and max values for the numeric input to range from -300 to 300. 
+				Set the maximum length of the text input to 1 (a single character).
+			-->
+			<div class="input">
+				First #: <input id="a" type="number" min="-1000" max="1000"/>
+				<p></p>
+				Second #: <input id="b" type="number" min="-1000" max="1000"/>
+			</div>
+			<div class="input">
+				<!--in Ex1, define an onclick event to this button; the event is to be
+				handled by the function "addition()" in your js file -->
+				<!-- in Ex2 to Ex5, you will need to change the names of the 
+				event handlers appropriately -->
+				<button> Enter </button>
+			</div>
+			<strong><p id="output"></p></strong>
+		</div>
+
+		<footer>&copy; Author(s): <span>Amir Chinaei, Andriy Pavlovych, Sonya Allin <!--in Ex1, replace our names with yours!--></span> </footer>
+		
+	</body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  background-color:white;	
+}
+
+body {
+	font-family: NimbusSanL, Arial, sans-serif;
+	text-align: center;
+	color:#212121;
+}
+
+div {
+	border:5px solid SlateGrey;
+	border-radius:5px;
+    margin: 20px;
+}
+
+.input {
+	border:none;
+	text-align:right;
+}
+
+p {
+	text-align:right;
+}
+
+input, button {
+	font:inherit;
+	background-color:lightgray;
+	width:150px;
+	padding-left: 5px;
+}
+
+button {
+    color:DarkSlateGrey;
+}
+
+#output {
+	font-family: NimbusSanL, Arial, sans-serif;
+	font-size:1.2em;
+	color:Green; 
+	text-decoration:bold;
+	margin: 10px;
+}
+
+footer{
+	padding-top:10px;
+	text-align:center;
+	font-size:10px;
+	color:LightSlateGrey;
+}
+
+[class*="column"] { 
+	width: 80%;
+	display:inline-block;
+	font-size:1.5em;
+}
+

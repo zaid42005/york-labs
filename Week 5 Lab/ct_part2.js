@@ -73,7 +73,7 @@ function problem_12() {
   var num = parseInt(prompt("Please enter a number: ", ""));
 
   outputObj.innerHTML = "number: " + num + "<br><br>";
-  let outputstring ="yes"
+  let outputstring = "yes";
 
   let prevDigit = num % 10;
   num = Math.floor(num / 10);
@@ -98,7 +98,7 @@ function problem_12() {
 
 function problem_13() {
   var outputObj = document.getElementById("output");
-  var num = parseInt(document.getElementById("numberInput").value); 
+  var num = parseInt(document.getElementById("numberInput").value);
   //var num = parseInt(prompt("Please enter a number: ", ""));
 
   outputObj.innerHTML = "number: " + num + "<br><br>";
@@ -140,18 +140,18 @@ function problem_14() {
 
 function problem_15() {
   var outputObj = document.getElementById("output");
-  var num = parseInt(document.getElementById("numberInput").value); 
+  var num = parseInt(document.getElementById("numberInput").value);
   //var num = parseInt(prompt("Please enter a number: ", ""));
-  var outputstring = ""; 
+  var outputstring = "";
 
   outputstring += "number: " + num + "<br><br>";
   for (let i = 1; i <= num; i++) {
     const stars = "*".repeat(3 * i);
-    const spaces = " ".repeat(Math.max(0, (3 * num - stars.length) / 2)); 
-    outputstring += spaces + stars + "<br>"; 
+    const spaces = " ".repeat(Math.max(0, (3 * num - stars.length) / 2));
+    outputstring += spaces + stars + "<br>";
   }
-  
+
   outputstring += "<br><br>program ended";
-  outputObj.innerHTML = outputObj.innerHTML + outputstring; 
+  outputObj.innerHTML = outputObj.innerHTML + outputstring;
   document.getElementsByTagName("button")[0].setAttribute("disabled", "true");
 }

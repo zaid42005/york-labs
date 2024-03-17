@@ -118,7 +118,7 @@ function problem_13() {
 //you will write additional functions below.
 //function problem_10() {
 //}
-function problem_13() {
+function problem_14() {
   var outputObj = document.getElementById("output");
 
   var num = parseInt(prompt("Please enter a number: ", ""));
@@ -137,5 +137,23 @@ function problem_13() {
   outputObj.innerHTML = outputObj.innerHTML + "Fibonacci: " + outputstring;
 
   outputObj.innerHTML = outputObj.innerHTML + "<br><br>" + "program ended";
+  document.getElementsByTagName("button")[0].setAttribute("disabled", "true");
+}
+
+function problem_15() {
+  var outputObj = document.getElementById("output");
+
+  var num = parseInt(prompt("Please enter a number: ", ""));
+  var outputString = ""; 
+
+  outputString += "number: " + num + "<br><br>";
+  for (let i = 1; i <= num; i++) {
+    const stars = "*".repeat(3 * i);
+    const spaces = " ".repeat(Math.max(0, (3 * num - stars.length) / 2)); 
+    outputString += spaces + stars + "<br>"; 
+  }
+
+  outputString += "<br><br>program ended";
+  outputObj.innerHTML = outputString; 
   document.getElementsByTagName("button")[0].setAttribute("disabled", "true");
 }

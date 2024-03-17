@@ -83,11 +83,10 @@ function problem_12() {
       outputstring = "no";
       break;
     } else {
-      outputstring = "yes"; 
+      outputstring = "yes";
     }
     num = Math.floor(num / 10);
   }
-
 
   outputObj.innerHTML =
     outputObj.innerHTML + "number in non-decreasing order? " + outputstring;
@@ -96,23 +95,21 @@ function problem_12() {
   document.getElementsByTagName("button")[0].setAttribute("disabled", "true");
 }
 
-
 function problem_13() {
   var outputObj = document.getElementById("output");
-  var num = parseInt(document.getElementById("numberInput").value); // Get the value from the input field  
+  var num = parseInt(document.getElementById("numberInput").value); // Get the value from the input field
   //var num = parseInt(prompt("Please enter a number: ", ""));
 
   outputObj.innerHTML = "number: " + num + "<br><br>";
 
   let sequence = [];
-    for (let i = 1; i <= num; i++){
-        let term = Math.pow(2, i) - 1;
-        sequence.push(term);
-    }
-    outputstring =  sequence.toString();
+  for (let i = 1; i <= num; i++) {
+    let term = Math.pow(2, i) - 1;
+    sequence.push(term);
+  }
+  outputstring = sequence.toString();
 
-  outputObj.innerHTML =
-    outputObj.innerHTML + outputstring;
+  outputObj.innerHTML = outputObj.innerHTML + outputstring;
 
   outputObj.innerHTML = outputObj.innerHTML + "<br><br>" + "program ended";
   document.getElementsByTagName("button")[0].setAttribute("disabled", "true");
@@ -121,3 +118,24 @@ function problem_13() {
 //you will write additional functions below.
 //function problem_10() {
 //}
+function problem_13() {
+  var outputObj = document.getElementById("output");
+
+  var num = parseInt(prompt("Please enter a number: ", ""));
+
+  outputObj.innerHTML = "number: " + num + "<br><br>";
+
+  let sequence = [0, 1];
+  while (sequence.length < num) {
+    let nextNumber =
+      sequence[sequence.length - 1] + sequence[sequence.length - 2];
+    sequence.push(nextNumber);
+  }
+
+  outputstring = sequence.toString();
+
+  outputObj.innerHTML = outputObj.innerHTML + "Fibonacci: " + outputstring;
+
+  outputObj.innerHTML = outputObj.innerHTML + "<br><br>" + "program ended";
+  document.getElementsByTagName("button")[0].setAttribute("disabled", "true");
+}

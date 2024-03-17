@@ -73,6 +73,7 @@ function problem_12() {
   var num = parseInt(prompt("Please enter a number: ", ""));
 
   outputObj.innerHTML = "number: " + num + "<br><br>";
+  let outputstring ="yes"
 
   let prevDigit = num % 10;
   num = Math.floor(num / 10);
@@ -97,7 +98,7 @@ function problem_12() {
 
 function problem_13() {
   var outputObj = document.getElementById("output");
-  var num = parseInt(document.getElementById("numberInput").value); // Get the value from the input field
+  var num = parseInt(document.getElementById("numberInput").value); 
   //var num = parseInt(prompt("Please enter a number: ", ""));
 
   outputObj.innerHTML = "number: " + num + "<br><br>";
@@ -115,9 +116,6 @@ function problem_13() {
   document.getElementsByTagName("button")[0].setAttribute("disabled", "true");
 }
 
-//you will write additional functions below.
-//function problem_10() {
-//}
 function problem_14() {
   var outputObj = document.getElementById("output");
 
@@ -142,18 +140,18 @@ function problem_14() {
 
 function problem_15() {
   var outputObj = document.getElementById("output");
+  var num = parseInt(document.getElementById("numberInput").value); 
+  //var num = parseInt(prompt("Please enter a number: ", ""));
+  var outputstring = ""; 
 
-  var num = parseInt(prompt("Please enter a number: ", ""));
-  var outputString = ""; 
-
-  outputString += "number: " + num + "<br><br>";
+  outputstring += "number: " + num + "<br><br>";
   for (let i = 1; i <= num; i++) {
     const stars = "*".repeat(3 * i);
     const spaces = " ".repeat(Math.max(0, (3 * num - stars.length) / 2)); 
-    outputString += spaces + stars + "<br>"; 
+    outputstring += spaces + stars + "<br>"; 
   }
-
-  outputString += "<br><br>program ended";
-  outputObj.innerHTML = outputString; 
+  
+  outputstring += "<br><br>program ended";
+  outputObj.innerHTML = outputObj.innerHTML + outputstring; 
   document.getElementsByTagName("button")[0].setAttribute("disabled", "true");
 }

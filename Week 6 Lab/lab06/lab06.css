@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    background-color:LightGrey;
+}
+  
+body {
+    font-family: NimbusSanL, Arial, sans-serif;
+    text-align: center;
+    color:#212121;
+    background-color:Silver; 
+}
+  
+div {
+    border:1px solid SlateGrey;
+    border-radius:5px;
+    margin: 20px;
+}
+  
+.input {
+    border:none;
+    text-align:right;
+}
+  
+p {
+    text-align:right;
+    padding: 20px;
+}
+  
+input, button {
+    font:inherit;
+    color:Blue;
+    width:120px;
+    padding-left: 5px;
+}
+  
+button {
+    color:DarkSlateGrey;
+}
+  
+strong {
+    font-family: NimbusSanL, Arial, sans-serif;
+    font-size:1.2em;
+    color:Green; 
+    text-decoration:bold;
+}
+  
+footer{
+    padding-top:10px;
+    text-align:center;
+    font-size:10px;
+    color:LightSlateGrey;
+}
+
+[class*="column"] { 
+    width: 80%;
+    display:inline-block;
+    height:60vh;
+    font-size:1.5em;
+}

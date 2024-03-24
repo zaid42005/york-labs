@@ -1,0 +1,27 @@
+<!-- JavaScript Examples, EECS 1012 -->
+<!-- (CC) Michael S. Brown, S. Allin, Amir H. Chinaei -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Task 0 </title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <script src="task2.js"></script>
+</head>
+
+<!-- in this file, you will trigger a JS function (initializeSession) upon load of the page.
+This will populate some session variables.  The session variables will persist while 
+the page is loaded and even after you leave the page. 
+See the task0 files for an example. -->
+<body onload="initializeSession()">
+  <div id="box">
+    <p style="font-family: sans-serif; font-size: 1.5em;"> Let's Try to Generate a 5 </p>
+    <p id="mydata" class="newdata"> </p>
+    <!-- another JS function call is triggered below. -->
+    <p> <button id="button" onclick="myFunction();"> Generate a Number </button></p>
+    <p id="totals" class="newdata"> </p>
+  </div>
+</body>
+
+</html>

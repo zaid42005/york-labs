@@ -1,0 +1,32 @@
+<!-- JavaScript Examples, EECS 1012 -->
+<!-- (CC) Michael S. Brown, S. Allin, Amir H. Chinaei -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Task 0 </title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <script src="task0.js"></script>
+</head>
+
+<!-- in this file, we will trigger a JS function (initializeSession) upon load of the page.
+this will populate some session variables.  The session variables will persist while 
+the page is loaded. -->
+<body onload="initializeSession()">
+  <div id="box">
+    <p style="font-family: sans-serif; font-size: 1.5em;"> Let's flip a coin </p>
+    <p id="mydata" class="newdata"> </p>
+    <!-- another JS function call is triggered below. -->
+    <p> <button id="button" onclick="myFunction();"> Coin Flip </button></p>
+    <p class="newdata"> GLOBAL VARIABLE VALUES: </p>
+    <p id="global" class="newdata"> </p>
+    <p class="newdata"> SESSION VARIABLE VALUES: </p>
+    <p id="session" class="newdata"> </p>
+    <p class="newdata"><i>Reload the page after several clicks to see the difference between global and session variables</i></p>
+    <p> <button id="button" onclick="restartSession();"> Clear Session Variables </button></p>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/theme.js"></script>
+    <script src="./src/game.js" ></script>
+  </head>
+  <body>
+    <div>
+    <h1 class="title">Wordle</h1>
+    <div id="game"></div>
+    <button onclick="initializeGame(); this.blur()" class="button-74">Generate new Wordle</button>
+    <div>
+    <footer >
+      <a href="./game.html" class="footer-link">Game</a>
+      <a href="./stats.html" class="footer-link">Stats</a>
+      <a><button onclick="toggleTheme(); this.blur()">Switch Mode</button></a>
+    </footer>
+  </div>
+   
+  </body>
+</html>

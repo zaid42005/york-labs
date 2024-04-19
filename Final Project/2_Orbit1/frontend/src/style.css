@@ -1,0 +1,167 @@
+body {
+  background: var(--default);
+  margin: 0;
+}
+
+:root {
+  --default: #121213;
+  --empty: #3a3a3c;
+  --wrong: #b59f3c;
+  --right: #538d4d;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 10vh;
+  width: 100%;
+  height: 65vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(5, auto);
+}
+
+hr {
+  margin-bottom: 5vh;
+}
+
+.quote {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10vh;
+}
+
+.box.empty {
+  background: var(--empty);
+}
+
+.box.wrong {
+  background: var(--wrong);
+}
+
+.box.right {
+  background: var(--right);
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--empty);
+  margin: 4px;
+  color: white;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  font-size: 2.4rem;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  position: relative;
+}
+
+footer .footer-link,
+footer button {
+  display: inline-block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--empty);
+  padding: 1vh;
+}
+
+.footer-link {
+  color: #fff;
+  margin: 0 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container p {
+  border: 1px solid #fafafa;
+  padding: 10px;
+  background-color: #333;
+}
+
+.light-mode .title,
+.light-mode footer .footer-link,
+.light-mode footer button {
+  color: var(--text-color);
+}
+
+.light-mode .grid-container p {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #e4e5f1;
+}
+
+.light-mode footer {
+  background-color: #e4e5f1;
+}
+
+:root.light-mode {
+  --default: #fafafa;
+  --empty: #e5e5e5b6;
+  --wrong: #e2e460;
+  --right: #98fb98;
+}
+
+.light-mode .box {
+  color: #121213;
+}
+
+.light-mode p {
+  color: #121213;
+}
+
+/* CSS for the inspired from here: https://getcssscan.com/css-buttons-examples */
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  touch-action: manipulation;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}

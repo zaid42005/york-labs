@@ -1,0 +1,20 @@
+Zaid Ahmed Orbit Notes:
+
+I'm the only member of the team. My teammate dropped out after Phase 0. 
+I've added a new version of my Phase 0 updated to reflect this project as the previous project idea couldn't be done by 1 person (0_Orbit1.docx)
+
+I've added my Phase 1 (1_Orbit1.docx) and Phase 3 video (3_Orbit1.mp4) as required into this zip file as well
+
+Originally, my team was set to make a student journal app but since my teammate dropped I changed the project premise so it'd be best if 
+the new Phase 0 document is read before evaluating my project. I've uploaded the new one onto the eClass submission as well for consistency.
+
+Additionally: I've linked the word file I used for this project in the server comments, it contains every english word that is 5 letters long, 
+I filtered the file to remove any inappropriate words but
+if I missed some, I apologize in advance if anything inappropriate shows up as it is 14,000 words
+
+How to start:
+
+cd into backend folder
+run npm start in terminal 
+server will be running on localhost port 4001 
+

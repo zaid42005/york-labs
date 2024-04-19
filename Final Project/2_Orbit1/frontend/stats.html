@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#121213" />
+    <title>Wordle Stats</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/theme.js"></script>
+    <script src="./src/stats.js"></script>
+  </head>
+  <body>
+    <h1 class="title">Stats</h1>
+
+    <div class="grid-container">
+      <p id="wins"></p>
+      <p id="losses"></p>
+      <p id="guesses"></p>
+      <p id="average"></p>
+    </div>
+
+    <hr />
+    <div class="quote">
+      <p id="quote"></p>
+    </div>
+    <button class="button-74" id="getQuote">Give me a Quote!</button>
+
+    <div>
+      <footer>
+        <a href="./game.html" class="footer-link">Game</a>
+        <a href="./stats.html" class="footer-link">Stats</a>
+        <a><button onclick="toggleTheme(); this.blur()">Switch Mode</button></a>
+      </footer>
+    </div>
+  </body>
+</html>
